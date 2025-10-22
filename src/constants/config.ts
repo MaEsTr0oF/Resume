@@ -9,6 +9,9 @@ type TConfig = {
     title: string;
     fullName: string;
     email: string;
+    telegram: string;
+    phone: string;
+    hhResume: string;
   };
   hero: {
     name: string;
@@ -23,6 +26,17 @@ type TConfig = {
       email: {
         span: string;
         placeholder: string;
+      };
+      telegram: {
+        span: string;
+        placeholder: string;
+      };
+      contactMethod: {
+        span: string;
+        options: {
+          email: string;
+          telegram: string;
+        };
       };
       message: {
         span: string;
@@ -40,9 +54,12 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Хвальчев Сергей — Портфолио",
+    title: "Хвальчев Сергей — Frontend Developer | React, TypeScript, Three.js",
     fullName: "Хвальчев Сергей",
     email: "skhvalchev@gmail.com",
+    telegram: "@s_hvalchev",
+    phone: "+7 (980) 629-97-88",
+    hhResume: "https://hh.ru/resume/2b720e2eff0c40ab150039ed1f47713255585a",
   },
   hero: {
     name: "Хвальчев Сергей",
@@ -53,10 +70,24 @@ export const config: TConfig = {
     h2: "Контакты.",
     form: {
       name: {
-        span: "Ваше имя",
+        span: "Ваше имя (как к вам обращаться)",
         placeholder: "Как вас зовут?",
       },
-      email: { span: "Ваш email", placeholder: "Ваш email адрес?" },
+      email: { 
+        span: "Email адрес", 
+        placeholder: "your-email@example.com" 
+      },
+      telegram: { 
+        span: "Telegram", 
+        placeholder: "@username или номер телефона" 
+      },
+      contactMethod: {
+        span: "Предпочитаемый способ связи",
+        options: {
+          email: "Email",
+          telegram: "Telegram"
+        }
+      },
       message: {
         span: "Ваше сообщение",
         placeholder: "Что вы хотите сказать?",

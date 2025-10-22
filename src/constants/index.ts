@@ -20,6 +20,7 @@ import {
   git,
   figma,
   docker,
+  noxer,
   logo1,
   project1_1,
   project1_2,
@@ -115,8 +116,8 @@ const experiences: TExperience[] = [
 	 {
 		title: "Frontend Developer",
 		companyName: "Noxer",
-		icon: web,
-		iconBg: "#E6DEDD",
+		icon: noxer,
+		iconBg: "black",
 		date: "май 2024 - сентябрь 2025",
 		points: [
 		  "Спроектировал и разработал Telegram Mini App, представляющий собой универсальный маркетплейс.",
