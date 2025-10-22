@@ -14,9 +14,9 @@ const INITIAL_STATE = Object.fromEntries(
 );
 
 const emailjsConfig = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_xxxxxxx",
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_xxxxxxx", 
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN || "xxxxxxxxxxxxxxx",
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || import.meta.env.EMAILJS_SERVICE_ID || "service_xxxxxxx",
+  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || import.meta.env.EMAILJS_TEMPLATE_ID || "template_xxxxxxx", 
+  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN || import.meta.env.EMAILJS_ACCESS_TOKEN || "xxxxxxxxxxxxxxx",
 };
 
 const validateEmail = (email: string): boolean => {
@@ -128,9 +128,8 @@ const Contact = () => {
             setSuccess(false);
           }, 5000);
         },
-        (error) => {
+        () => {
           setLoading(false);
-          console.error("EmailJS Error:", error);
           setErrors(["Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз."]);
         }
       );

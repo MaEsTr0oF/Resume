@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Graph Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            padding: 60px;
+        }
+        
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #915eff, #ff6b6b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .name {
+            font-size: 64px;
+            font-weight: bold;
+            color: white;
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 600;
+            background: linear-gradient(45deg, #915eff, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0 0 20px 0;
+        }
+        
+        .description {
+            font-size: 24px;
+            color: #cccccc;
+            margin: 0 0 20px 0;
+        }
+        
+        .tech-stack {
+            font-size: 20px;
+            color: #915eff;
+            margin: 0 0 10px 0;
+        }
+        
+        .services {
+            font-size: 20px;
+            color: #ff6b6b;
+            margin: 0;
+        }
+        
+        .decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .decoration {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        
+        .decoration-1 {
+            width: 100px;
+            height: 100px;
+            background: #915eff;
+            top: 100px;
+            left: 100px;
+        }
+        
+        .decoration-2 {
+            width: 160px;
+            height: 160px;
+            background: #ff6b6b;
+            bottom: 100px;
+            right: 100px;
+        }
+        
+        .decoration-3 {
+            width: 60px;
+            height: 60px;
+            background: #915eff;
+            top: 150px;
+            right: 200px;
+        }
+        
+        .decoration-4 {
+            width: 80px;
+            height: 80px;
+            background: #ff6b6b;
+            bottom: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="decorations">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        <div class="decoration decoration-3"></div>
+        <div class="decoration decoration-4"></div>
+    </div>
+    
+    <div class="container">
+        <div class="avatar">СХ</div>
+        <div class="content">
+            <h1 class="name">Хвальчев Сергей</h1>
+            <h2 class="title">Frontend Developer</h2>
+            <p class="description">React • TypeScript • Redux • Three.js</p>
+            <p class="tech-stack">Создаю современные веб-приложения</p>
+            <p class="services">Маркетплейсы и пользовательские интерфейсы</p>
+        </div>
+    </div>
+</body>
+</html>

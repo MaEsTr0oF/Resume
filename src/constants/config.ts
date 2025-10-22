@@ -54,7 +54,7 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Хвальчев Сергей — Frontend Developer | React, TypeScript, Three.js",
+    title: "Хвальчев Сергей — Frontend Developer | React, TypeScript, Three.js, Redux",
     fullName: "Хвальчев Сергей",
     email: "skhvalchev@gmail.com",
     telegram: "@s_hvalchev",

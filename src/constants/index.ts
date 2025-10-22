@@ -40,8 +40,20 @@ export const navLinks: TNavLink[] = [
     title: "Обо мне",
   },
   {
+    id: "experience",
+    title: "Опыт",
+  },
+  {
+    id: "tech",
+    title: "Технологии",
+  },
+  {
     id: "work",
     title: "Мои работы",
+  },
+  {
+    id: "contact",
+    title: "Контакты",
   },
 ];
 
